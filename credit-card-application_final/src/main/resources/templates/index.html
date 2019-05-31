@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Credit Card Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+</head>
+</head>
+<body>
+<div style="width:40%;
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;">
+    <form id="credit-card-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Credit Card holder name">
+        </div>
+
+        <div class="form-group">
+            <label for="cardNumber">Credit Card Number</label>
+            <input type="number" class="form-control" id="cardNumber" placeholder="Credit Card Number">
+        </div>
+
+        <div class="form-group">
+            <label for="cardLimit">Credit Card Limit</label>
+            <input type="number" class="form-control" id="cardLimit" placeholder="Credit Card Limit">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <h5>Errors</h5>
+        <ul class="list-group" id="errors">
+        </ul>
+
+
+        <table data-toggle="table" class="display table table-bordered" data-url="/credit-card" id="cards">
+            <thead>
+            <tr>
+                <th data-field="name">Name</th>
+                <th data-field="cardNumber">Credit Card Number</th>
+                <th data-field="cardLimit">Credit Limit</th>
+                <th data-field="cardBalance">Balance</th>
+
+            </tr>
+            </thead>
+        </table>
+
+    </form>
+</div>
+
+
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
