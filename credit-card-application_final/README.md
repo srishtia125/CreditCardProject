@@ -6,7 +6,6 @@ Installation
 Clone the source code/download from folder and unzip
 git clone https://github.com/srishtia125/CreditCardProject.git
 Go to the checked out source code and start the server locally (Server will start on port 8081 , make sure no other is using the same port)
-mvn spring-boot:run
 
 Once the server is started,
 http://localhost:8080
@@ -24,8 +23,6 @@ Created Unique creditcard number constraint.
 Exceptions
 CreditCardNotFoundException : if the api input consists of the number is which is not valid creditcard in the system.
 InvalidCreditCardNumber : if we try to add invalid creditcard number
-PhoneNumberNotFoundException : if phone number which we try to activate is not associated with that customer
-
 
 Test Cases
 Execute mvn test command to run test cases:
